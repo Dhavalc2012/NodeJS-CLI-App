@@ -32,5 +32,10 @@ const request = https.get(`https://teamtreehouse.com/${username}.json`, response
                           });
 }
 
-getProfile("chalkers");
-getProfile("dhawalchheda");
+let users = ["chalkers","dhawalchheda"];
+/* users.forEach(user => {
+	getProfile(user);
+}); */
+
+//We can write a short hand for above code as such since it has only parameter to pass
+users.forEach(getProfile);
